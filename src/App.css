@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+  .main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:aliceblue;
+    flex-direction: column;
+  }
+
+  .main-header{
+    font-family: 'Montserrat', sans-serif;
+    color:darkblue;
+  }
+
+  .create-frm label{
+    color:#4B91F7;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: bolder;
+    margin-bottom: 5px;
+  }
+  
+  .first-frm{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  .txtfield{
+    
+    border-block-width: 10px;
+    border-right: 10px;
+    border-style:solid;
+    border-color: white;
+    outline-color: #4B91F7;
+  }
+  .btn {
+    display: flex;
+    flex-direction: column;
+    padding: 6px 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+    border-radius: 6px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+  
+    color: #fff;
+    background: linear-gradient(180deg, #4B91F7 0%, #367AF6 100%);
+     background-origin: border-box;
+    box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .btn:focus {
+    box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+    outline: 0;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 80%;
+    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  th, td {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  th {
+    background-color: #4B91F7;
+    color: azure;
+    font-weight: bold;
+  }
+  
+  tr{
+    background-color: azure;
+    color: #4B91F7;
+    text-align: center;
+    font-size: 15px;
+    font-weight: normal; 
+  }
+  
+  .button-29 {
+    align-items: center;
+    appearance: none;
+    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+  }
+  
+  .button-29{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 150px;
+  }
+  .button-29:focus {
+    box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  }
+  
+  .button-29:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+  
+  .button-29:active {
+    box-shadow: #3c4fe0 0 3px 7px inset;
+    transform: translateY(2px);
+  }
+
+@media only screen and (max-width : 600px)
+{
+  .main{
+    background-color: aliceblue;
+  }
+  .main-header{
+    text-align: center;
+  }
+  table{
+    overflow-y:scroll;
+    height:40%;
+    display: block;
+ }
+ thead th{
+   position: sticky;
+   top: 0;
+   opacity: 1;
+   background-color: #3c4fe0;
+ }
+ .icbutton {
+   color: #3c4fe0 !important;
+ }
+}
+
