@@ -19,7 +19,8 @@ const AddUser = () => {
 
   const usersLength = useSelector((state) => state.users.length);
 
-  const handleClick = () => {
+  const handleClick = (e) => {
+    e.preventDefault();
     if (
       name.match(/^[A-Za-z_ ]{7,29}$/) &&
       mobile.match(/^[0-9]{10}$/) &&
@@ -36,25 +37,28 @@ const AddUser = () => {
 
       setError(null);
       navigate("/");
+    } else if (!name || !email || !mobile) {
+      setError(alert("Fill in all the fields"));
     } else {
       if (!name.match(/^[A-Za-z_ ]{7,29}$/)) {
         alert("Name should be minimum of 7 chars and maximum of 29 chars...");
+        setName("");
       }
       if (!mobile.match(/^[0-9]{10}$/)) {
         alert(
           "Mobile Number should be 10 chars of length and contain only numbers..."
         );
+        setMobile("");
       }
       if (!email.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i)) {
         alert("Email did not match the required pattern...");
-      } else {
-        setError(alert("Fill in all the fields"));
+        setEmail("");
       }
     }
 
-    setName("");
-    setMobile("");
-    setEmail("");
+    // setName("");
+    // setMobile("");
+    // setEmail("");
   };
 
   return (
